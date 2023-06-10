@@ -1,6 +1,6 @@
 echo "--------------- Welcome to React TypeScript Component Creator v1.0 by benikee. ---------------\n\n"
 
-SCRIPT_DIR="$(dirname "$(realpath "$0")")"
+SCRIPT_DIR="/usr/local/lib"
 BASE_SOURCE_NAME="ComponentBase.txt"
 COMPONENTS_FOLDER_BASE="$(pwd)"
 COMPONENT_EXISTS=true
