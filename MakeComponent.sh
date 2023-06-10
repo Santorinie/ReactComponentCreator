@@ -29,7 +29,7 @@ fi
 cd "$COMPONENTS_FOLDER_BASE"
 
 if ! [ -d "./src/components" ]; then
-    read -p "The /src/components folder doesn't exists. Do you want me to create one for you? (y/n): " CREATE_ANS
+    read -p "The /src/components folder doesn't exists inside your project folder. Do you want me to create one for you? (y/n): " CREATE_ANS
 
     if [ "$CREATE_ANS" = "" -o "$CREATE_ANS" = "y" ]; then
         mkdir -p src/components
