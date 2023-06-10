@@ -1,0 +1,9 @@
+import styles from './base.module.css';
+
+export default function Base() : React.JSX.Element {
+    return (
+        <div>
+
+        </div>
+    );
+}
