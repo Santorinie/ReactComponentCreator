@@ -23,7 +23,7 @@ function getStringVariant() {
 read -p "Would you like to use the default components folder: ($COMPONENTS_FOLDER_BASE/src/components)? (y/n): " folder_ans
 
 if ! [ "$folder_ans" = "" -o "$folder_ans" = "y" ]; then
-    read -p "Please enter a full path of where you want the Wizard to put your new component!: " COMPONENTS_FOLDER_BASE
+    read -p "Please enter a project path where you want the Wizard to put your new component!: " COMPONENTS_FOLDER_BASE
 fi
 
 cd "$COMPONENTS_FOLDER_BASE"
@@ -35,7 +35,7 @@ if ! [ -d "./src/components" ]; then
         mkdir -p src/components
         cd ./src/components
     else
-        echo "I can't cope with your shit bro"
+        echo "I can't cope with your shit bro."
         exit
     fi
 else
@@ -45,7 +45,7 @@ fi
 while [ "$COMPONENT_EXISTS" = true ]
 do
 
-read -p "Please enter the name of the component: " componentName
+read -p "Please enter the name of the new component: " componentName
 
 if [ "$componentName" = "" ]; then
     echo "Press ctrl+c to exit the script."
