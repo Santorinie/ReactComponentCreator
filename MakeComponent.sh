@@ -32,8 +32,7 @@ if ! [ -d "./src/components" ]; then
     read -p "The /src/components folder doesn't exists. Do you want me to create one for you? (y/n): " CREATE_ANS
 
     if [ "$CREATE_ANS" = "" -o "$CREATE_ANS" = "y" ]; then
-        mkdir src
-        mkdir src/components
+        mkdir -p src/components
         cd ./src/components
     else
         echo "I can't cope with your shit bro"
